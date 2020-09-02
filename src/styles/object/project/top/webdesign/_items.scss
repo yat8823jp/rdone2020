@@ -1,0 +1,58 @@
+.p-top--webdesign {
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		@include breakpoint( tablet ) {
+			width: 80%;
+			margin: auto;
+		}
+		@include breakpoint( pc ) {
+		}
+		li {
+			margin-bottom: 40px;
+			@include breakpoint( tablet ) {
+				width: calc( 50% - 30px );
+				margin-bottom: 50px;
+				&:nth-child( odd ) {
+					margin-right: 30px;
+				}
+				&:nth-child( even ) {
+					margin-left: 30px;
+				}
+			}
+			@include breakpoint( pc ) {
+				margin-bottom: 80px;
+			}
+			.imgrap {
+				margin-bottom: 10px;
+				@include hovanime;
+				@include breakpoint( tablet ) {
+					margin-bottom: 20px;
+				}
+				@include breakpoint( pc ) {
+				}
+				> a {
+					display: block;
+				}
+			}
+		}
+	}
+	dl {
+		dt {
+			a {
+				width: 100%;
+				font-size: 1.4rem;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					width: 670px;
+				}
+			}
+		}
+		dd {
+			.url {
+
+			}
+		}
+	}
+}

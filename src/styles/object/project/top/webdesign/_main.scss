@@ -1,0 +1,91 @@
+.p-top--webdesign {
+	padding: 70px 20px 0;
+	@include breakpoint( tablet ) {
+		padding: 50px 20px 0x;
+	}
+	@include breakpoint( pc ) {
+		// width: 930px;
+		padding: 100px 0 0;
+	}
+	@include breakpoint( wide ) {
+	}
+	h2 {
+		margin-left: -16px;
+		font-size: 6.0rem;
+		font-family: 'Meie Script', cursive;
+		font-weight: 400;
+		position: absolute;
+		left: 0;
+		@include breakpoint( tablet ) {
+			font-size: 10vw;
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+		span {
+			margin-left: -10px;
+			@include breakpoint( pc ) {
+				margin-left: -20px;
+			}
+			@include breakpoint( wide ) {
+			}
+		}
+	}
+	&__header {
+		height: 280px;
+		margin-bottom: 20px;
+		position: relative;
+		@include breakpoint( tablet ) {
+			height: 300px;
+			margin-bottom: 0;
+		}
+		@include breakpoint( pc ) {
+			height: 400px;
+		}
+		@include breakpoint( wide ) {
+		}
+		.description {
+			top: 100px;
+			right: 0;
+			position: absolute;
+			font-family: 'Vollkorn', serif;
+			@include breakpoint( tablet ) {
+				width: 57%;
+				top: 100px;
+			}
+			@include breakpoint( pc ) {
+				width: inherit;
+				top: 150px;
+				right: inherit;
+				left: 55%;
+			}
+			@include breakpoint( wide ) {
+			}
+			> .title {
+				font-size: 3.0rem;
+				font-weight: bold;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					font-size: 3vw;
+					white-space: nowrap;
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+			> .text {
+				font-size: 1.4rem;
+				margin-left: 0;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					font-size: 1vw;
+					white-space: nowrap;
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+		}
+	}//&__header
+}

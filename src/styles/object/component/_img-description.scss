@@ -1,0 +1,18 @@
+.c-img-description {
+	dt {
+		font-size: 1.6rem;
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+			font-size: 1.6rem;
+		}
+	}
+	dd {
+		font-size: 1.4rem;
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+			font-size: 1.4rem;
+		}
+}
+}
