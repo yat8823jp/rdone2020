@@ -155,7 +155,7 @@ gulp.task( 'browser-sync', function( done ) {
 		// 	}
 		// },
 		proxy: {
-			target: "rish-design.wp"
+			target: "rish.wp"
 		},
 		notify: true
 	});

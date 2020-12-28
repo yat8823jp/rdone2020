@@ -48,6 +48,7 @@ a {
 	text-decoration: none;
 	&:link, &:visited {
 		color: #8c8c8c;
+		text-decoration: underline;
 	}
 	&:hover, &:active {
 		color: #c1c1c1;
