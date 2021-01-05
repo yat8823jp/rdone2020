@@ -108,26 +108,27 @@
 			</div>
 		</div>
 		<article class="p-slide-panel">
+		<?php $upload_dir = wp_upload_dir(); ?>
 			<ul class="p-slide-panel__slide js-infiniteslide--left">
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0109.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/CK8A0109" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0796.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/CK8A0796" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A3703.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/CK8A3703" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A3829.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/CK8A3829" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A3866.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/CK8A3866" ); ?></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0109.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A0109-150x150.jpg" alt="梅田ビルの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0796.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A0796-150x150.jpg" alt="電線と夏空の写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A3703.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A3703-150x150.jpg" alt="ピンボールの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A3829.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A3829-150x150.jpg" alt="道路と車の光跡の写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A3866.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A3866-150x150.jpg" alt="秋の雲空の写真"></a></li>
 			</ul>
 			<ul class="p-slide-panel__slide js-infiniteslide--right">
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A3849.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A3849" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A1946.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A1946" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A3020.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A3020" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A4341.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A4341" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A4892.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A4892" ); ?></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A3849.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A3849-150x150.jpg" alt="紫陽花の写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A1946.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A1946-150x150.jpg" alt="夜の工場"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A3020.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A3020-150x150.jpg" alt="夜の工場とリフレクションの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A4341.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A4341-150x150.jpg" alt="神戸と女性モデルの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A4892.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A4892-150x150.jpg" alt="窓際と女性モデルの写真"></a></li>
 			</ul>
 			<ul class="p-slide-panel__slide js-infiniteslide--left">
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A6065.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A6065" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A7095.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A7095" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A7538.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A7538" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A7556.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A7556" ); ?></a></li>
-				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A8806.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><?php echo get_template_part( "/components/img/4M3A8806" ); ?></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A6065.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A6065-150x150.jpg" alt="女性モデルの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A7095.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A7095-150x150.jpg" alt="美術館の写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A7538.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A7538-150x150.jpg" alt="ニューヨークの町並みの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A7556.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A7556-150x150.jpg" alt="ニューヨークのビルの写真"></a></li>
+				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/4M3A8806.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/4M3A8806-150x150.jpg" alt="花火の写真"></a></li>
 			</ul>
 			<div class="js-imgover__close"></div>
 			<div class="js-imgover__bg"></div>
@@ -182,7 +183,12 @@
 					Rish inc.<br>
 					<small>株式会社 リッシュ</small>
 				</dd>
-				<dt>Address</dt>
+				<dt>Address - Business office</dt>
+				<dd>
+					2-2-10 Tokui-cho, Chuo-ku, Osaka-shi, Osaka Arkmine B201 540-0025<br>
+					<small>〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</small>
+				</dd>
+				<dt>Address - Headquarters</dt>
 				<dd>
 					4-114 Minami Uematsucho, Yao City, Osaka 581-0091<br>
 					<small>〒581-0091 大阪府八尾市南植松町4丁目114</small>
