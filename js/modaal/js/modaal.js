@@ -1,7 +1,7 @@
 /*!
 	Modaal - accessible modals - v0.4.4
 	by Humaan, for all humans.
-	http://humaan.com
+	//humaan.com
  */
 /**
 	Modaal jQuery Plugin : Accessible Modals
@@ -84,7 +84,7 @@
 ( function( $ ) {
 
 	var modaal_loading_spinner = '<div class="modaal-loading-spinner"><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div>'
-	
+
 	var Modaal = {
 		init : function(options, elem) {
 			var self = this;
@@ -111,7 +111,7 @@
 			};
 
 			self.lastFocus = null;
-			
+
 			// if is_locked
 			if ( self.options.is_locked || self.options.type == 'confirm' || self.options.hide_close ) {
 				self.scope.close_btn = '';
@@ -398,7 +398,7 @@
 
 			// close off modaal-inner-wrapper
 			build_markup +=	'</div>';
-			
+
 			// If type is image AND outer_controls is true: add gallery next and previous controls.
 			if (self.options.type == 'image' && self.options.outer_controls === true) {
 				build_markup += self.scope.prev_btn + self.scope.next_btn;
@@ -453,17 +453,17 @@
 			// ID exists, is not empty null or undefined.
 			if ( id != '' && id !== null && id !== undefined ) {
 				// set up oembed url
-				var ig_url = 'https://api.instagram.com/oembed?url=http://instagr.am/p/' + id + '/';
+				var ig_url = '//api.instagram.com/oembed?url=//instagr.am/p/' + id + '/';
 
 				$.ajax({
 					url: ig_url,
 					dataType: "jsonp",
 					cache: false,
 					success: function (data) {
-						
+
 						// Create temp dom element from which we'll clone into the modaal instance. This is required to bypass the unusual small thumb issue instagram oembed was serving up
 						self.dom.append('<div id="temp-ig" style="width:0;height:0;overflow:hidden;">' + data.html + '</div>');
-						
+
 						// Check if it has loaded once before.
 						// This is to stop the Embeds.process from throwing and error the first time it's being loaded.
 						// private_options are individual to a modaal_scope so will not work across multiple scopes when checking if true, only that one item.
@@ -483,7 +483,7 @@
 								$('#temp-ig').remove();
 							}, 1000);
 						}
-						
+
 					},
 					error: function() {
 						content = error_msg;
@@ -576,7 +576,7 @@
 
 			var modaal_image_markup = '';
 			var gallery_total;
-			
+
 			// If has group attribute
 			if ( self.$elem.is('[data-group]') || self.$elem.is('[rel]') ) {
 
@@ -1354,7 +1354,7 @@
 					var findElement = [].some.call(mutation.addedNodes, function(el) {
 						var elm = $(el);
 						if ( elm.is('a') || elm.is('button') ) {
-							
+
 							if ( elm.hasClass('modaal') ) {
 								// is inline Modaal, initialise options
 								modaal_inline_options(elm);

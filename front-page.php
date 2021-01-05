@@ -18,70 +18,70 @@
 			<article class="p-top--webdesign__thumbnail-wrap">
 				<div class="p-top--webdesign__thumbnail">
 					<div class="imgrap">
-						<a href="http://kitayaryokan.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/kitaya_big.jpg" alt="喜多屋旅館"></a>
+						<a href="//kitayaryokan.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/kitaya_big.jpg" alt="喜多屋旅館"></a>
 					</div>
 					<!-- <div class="p-blackbox is-blackbox"></div> -->
 				</div>
 				<dl class="c-img-description">
 					<dt>喜多屋旅館</dt>
 					<dd>
-						<a href="http://kitayaryokan.jp/" class="url" target="_blank">http://kitayaryokan.jp/</a>
+						<a href="//kitayaryokan.jp/" class="url" target="_blank">kitayaryokan.jp</a>
 					</dd>
 				</dl>
 			</article>
 			<ul class="p-top--webdesign__items">
 				<li>
 					<div class="imgrap">
-						<a href="https://paikutosora.com/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/paikutosora.jpg" alt="芦屋揚げパン パイクとそら"></a>
+						<a href="//paikutosora.com/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/paikutosora.jpg" alt="芦屋揚げパン パイクとそら"></a>
 					</div>
 					<dl class="c-img-description">
 						<dt>芦屋揚げパン パイクとそら</dt>
 						<dd>
-							<a href="https://paikutosora.com/" class="url" target="_blank">https://paikutosora.com/</a>
+							<a href="//paikutosora.com/" class="url" target="_blank">paikutosora.com</a>
 						</dd>
 					</dl>
 				</li>
 				<li>
 					<div class="imgrap">
-						<a href="https://maidenclothing.net/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/meidenclothing.jpg" alt="メイデンクロージング"></a>
+						<a href="//maidenclothing.net/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/meidenclothing.jpg" alt="メイデンクロージング"></a>
 					</div>
 					<dl class="c-img-description">
 						<dt>メイデンクロージング</dt>
 						<dd>
-							<a href="https://maidenclothing.net/" class="url" target="_blank">https://maidenclothing.net/</a>
+							<a href="//maidenclothing.net/" class="url" target="_blank">maidenclothing.et/</a>
 						</dd>
 					</dl>
 				</li>
 				<li>
 					<div class="imgrap">
-						<a href="https://maidenclothing.net/kaitori/takuhai.html" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/meidenclothing_lp.jpg" alt="メイデンクロージングLP"></a>
+						<a href="//maidenclothing.net/kaitori/takuhai.html" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/meidenclothing_lp.jpg" alt="メイデンクロージングLP"></a>
 					</div>
 					<dl class="c-img-description">
 						<dt>メイデンクロージング 買い取り</dt>
 						<dd>
-							<a href="https://maidenclothing.net/kaitori/takuhai.html" class="url" target="_blank">https://maidenclothing.net/kaitori/takuhai.html</a>
+							<a href="//maidenclothing.net/kaitori/takuhai.html" class="url" target="_blank">maidenclothing.et/kaitori/takuhai.html</a>
 						</dd>
 					</dl>
 				</li>
 				<li>
 					<div class="imgrap">
-						<a href="https://hsa-japan.co.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/hsa-japan.jpg" alt="エイチ・エス・エイ ジャパン"></a>
+						<a href="//hsa-japan.co.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/hsa-japan.jpg" alt="エイチ・エス・エイ ジャパン"></a>
 					</div>
 					<dl class="c-img-description">
 						<dt>エイチ・エス・エイ ジャパン</dt>
 						<dd>
-							<a href="https://hsa-japan.co.jp/" class="url" target="_blank">https://hsa-japan.co.jp/</a>
+							<a href="//hsa-japan.co.jp/" class="url" target="_blank">hsa-japan.co.jp</a>
 						</dd>
 					</dl>
 				</li>
 				<li>
 					<div class="imgrap">
-						<a href="https://h-schule.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/h-schule.jpg" alt="学習塾堀内シューレ"></a>
+						<a href="//h-schule.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/h-schule.jpg" alt="学習塾堀内シューレ"></a>
 					</div>
 					<dl class="c-img-description">
 						<dt>学習塾 堀内シューレ</dt>
 						<dd>
-							<a href="https://h-schule.jp/" class="url" target="_blank">https://h-schule.jp/</a>
+							<a href="//h-schule.jp/" class="url" target="_blank">h-schule.jp/</a
 						</dd>
 					</dl>
 				</li>
@@ -108,7 +108,10 @@
 			</div>
 		</div>
 		<article class="p-slide-panel">
-		<?php $upload_dir = wp_upload_dir(); ?>
+		<?php
+			$upload_dir = wp_upload_dir();
+			var_dump( $upload_dir );
+		?>
 			<ul class="p-slide-panel__slide js-infiniteslide--left">
 				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0109.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A0109-150x150.jpg" alt="梅田ビルの写真"></a></li>
 				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0796.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A0796-150x150.jpg" alt="電線と夏空の写真"></a></li>
@@ -151,16 +154,16 @@
 		</header>
 		<ul class="p-top--animation__items">
 			<li>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/cNIKjufCbZQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/cNIKjufCbZQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</li>
 			<li>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/eI5GsrOlwJw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/eI5GsrOlwJw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</li>
 			<li>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/SmXxDENpE9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/SmXxDENpE9k?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</li>
 			<li>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/T1jbE8i_-qQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/T1jbE8i_-qQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</li>
 		</ul>
 	</section>
@@ -215,8 +218,8 @@
 				</dd>
 				<dt>Labor regulations</dt>
 				<dd>
-					<a href="https://github.com/yat8823jp/EmployeeHandbook" target="_blank">Lead GitHub repository</a><br>
-					<small><a href="https://github.com/yat8823jp/EmployeeHandbook" target="_blank">GitHub のリポジトリをお読みください</a></small>
+					<a href="//github.com/yat8823jp/EmployeeHandbook" target="_blank">Lead GitHub repository</a><br>
+					<small><a href="//github.com/yat8823jp/EmployeeHandbook" target="_blank">GitHub のリポジトリをお読みください</a></small>
 				</dd>
 				<dt>Main client</dt>
 				<dd>
