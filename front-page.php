@@ -81,7 +81,7 @@
 					<dl class="c-img-description">
 						<dt>学習塾 堀内シューレ</dt>
 						<dd>
-							<a href="//h-schule.jp/" class="url" target="_blank">h-schule.jp/</a
+							<a href="//h-schule.jp/" class="url" target="_blank">h-schule.jp/</a>
 						</dd>
 					</dl>
 				</li>
@@ -215,6 +215,11 @@
 				<dd>
 					E-commerce, Fashion and apparel product sales, Web design, Web Developent, Photo/video shooting, Photo/video edting, Consulting<br>
 					<small>電子商取引, ファッション・アパレルの物販, ウェブデザイン, ウェブ開発, 写真・動画撮影, 写真・動画編集, コンサルティング</small>
+				</dd>
+				<dt>Curio dealer</dt>
+				<dd>
+					Secondhand dealer license number: 62107R021247<br>
+					<small>古物商許可番号: 62107R021247</small>
 				</dd>
 				<dt>Labor regulations</dt>
 				<dd>
