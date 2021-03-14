@@ -47,11 +47,11 @@ gulp.task( 'scss', function( done ) {
 		.pipe( bulkSass() )
 		.pipe( rename( {
 			sass: true,
-			minifier: false //圧縮の有無 true/false
 		} ) )
 		.pipe( scss( {
 			outputStyle: 'expanded'
 		} ) )
+		.pipe( gulpif( '*.css', minifyCss() ) )
 		.pipe( sourcemaps.write( './' ) )
 		.pipe( gulp.dest( './' ) );
 	done();
@@ -74,7 +74,7 @@ gulp.task( 'browserify', function ( done ) {
 	};
 	var b = browserify ( option.bundleOption )
 		.transform( babelify.configure ( {
-			compact: false,
+			compact: true,
 			presets: ["es2015"]
 		} ) )
 		.transform( browserifyShim );
@@ -99,12 +99,12 @@ gulp.task( 'browserify', function ( done ) {
  */
 gulp.task( 'pleeease', function( done ) {
 	return gulp.src( './style.css' )
-		.pipe( pleeease( {
-			sass: true,
-			minifier: false //圧縮の有無 true/false
-		} ) )
 		.pipe( plumber ( {
 			errorHandler: notify.onError( 'Error: <%= error.message %>' )
+		} ) )
+		.pipe( pleeease( {
+			sass: true,
+			minifier: true //圧縮の有無 true/false
 		} ) )
 		.pipe( gulp.dest( './' ) );
 	done();

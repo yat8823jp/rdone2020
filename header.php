@@ -112,7 +112,7 @@
 					<path class="p-logo--header__svg__path" d="M421.6,61.8"/>
 				</svg>
 			</h1><!--/.l-header__logo-->
-			<img src="<?php echo get_template_directory_uri( "" ); ?>/images/top/header/001.jpg" alt="ヘッダー用背景：空の写真" class="mv">
+			<img src="<?php header_image(); ?>" alt="ヘッダー用背景" class="mv">
 			<div class="l-header--bg"></div>
 		</header>
 	<?php else : ?>

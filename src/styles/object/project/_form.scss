@@ -64,6 +64,7 @@
 		textarea {
 			width: 99%;
 			min-height: 80px;
+			height: 80px;
 			padding-right: 10px;
 		}
 	}
@@ -81,8 +82,9 @@
 		border: 1px solid #000;
 	}
 	.set-bt {
-		display: flex;
-		justify-content: space-between;
+		margin-top: 60px;
+		// display: flex;
+		// justify-content: space-between;
 	}
 	button,
 	.back,

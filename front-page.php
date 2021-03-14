@@ -15,77 +15,9 @@
 					</dd>
 				</dl>
 			</header>
-			<article class="p-top--webdesign__thumbnail-wrap">
-				<div class="p-top--webdesign__thumbnail">
-					<div class="imgrap">
-						<a href="//kitayaryokan.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/kitaya_big.jpg" alt="喜多屋旅館"></a>
-					</div>
-					<!-- <div class="p-blackbox is-blackbox"></div> -->
-				</div>
-				<dl class="c-img-description">
-					<dt>喜多屋旅館</dt>
-					<dd>
-						<a href="//kitayaryokan.jp/" class="url" target="_blank">kitayaryokan.jp</a>
-					</dd>
-				</dl>
+			<article class="p-top--webdesign__items">
+				<?php get_template_part( 'components/parts/webdesign' ); ?>
 			</article>
-			<ul class="p-top--webdesign__items">
-				<li>
-					<div class="imgrap">
-						<a href="//paikutosora.com/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/paikutosora.jpg" alt="芦屋揚げパン パイクとそら"></a>
-					</div>
-					<dl class="c-img-description">
-						<dt>芦屋揚げパン パイクとそら</dt>
-						<dd>
-							<a href="//paikutosora.com/" class="url" target="_blank">paikutosora.com</a>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="imgrap">
-						<a href="//maidenclothing.net/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/meidenclothing.jpg" alt="メイデンクロージング"></a>
-					</div>
-					<dl class="c-img-description">
-						<dt>メイデンクロージング</dt>
-						<dd>
-							<a href="//maidenclothing.net/" class="url" target="_blank">maidenclothing.et/</a>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="imgrap">
-						<a href="//maidenclothing.net/kaitori/takuhai.html" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/meidenclothing_lp.jpg" alt="メイデンクロージングLP"></a>
-					</div>
-					<dl class="c-img-description">
-						<dt>メイデンクロージング 買い取り</dt>
-						<dd>
-							<a href="//maidenclothing.net/kaitori/takuhai.html" class="url" target="_blank">maidenclothing.et/kaitori/takuhai.html</a>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="imgrap">
-						<a href="//hsa-japan.co.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/hsa-japan.jpg" alt="エイチ・エス・エイ ジャパン"></a>
-					</div>
-					<dl class="c-img-description">
-						<dt>エイチ・エス・エイ ジャパン</dt>
-						<dd>
-							<a href="//hsa-japan.co.jp/" class="url" target="_blank">hsa-japan.co.jp</a>
-						</dd>
-					</dl>
-				</li>
-				<li>
-					<div class="imgrap">
-						<a href="//h-schule.jp/" target="_blank"><img src="<?php echo COMMON_PFIX; ?>/images/webdesign/h-schule.jpg" alt="学習塾堀内シューレ"></a>
-					</div>
-					<dl class="c-img-description">
-						<dt>学習塾 堀内シューレ</dt>
-						<dd>
-							<a href="//h-schule.jp/" class="url" target="_blank">h-schule.jp/</a>
-						</dd>
-					</dl>
-				</li>
-			</ul>
 		</div>
 	</section>
 	<section id="photo" class="p-top-photo is-fade">
@@ -166,14 +98,19 @@
 			</li>
 		</ul>
 	</section>
-	<section class="p-top--contact is-fade">
+	<section id="contact" class="p-top--contact is-fade">
 		<dl class="p-top--contact__header">
 			<dt>Contact</dt>
 			<dd>お仕事のご依頼・ご相談等<br>
 			こちらからお願いします。</dd>
 		</dl>
 		<div class="p-form">
-			<?php echo do_shortcode( '[mwform_formkey key="5"]' ); ?>
+			<?php //echo do_shortcode( '[mwform_formkey key="8"]' ); ?>
+			<?php
+				echo do_shortcode( '[contact-form-7 id="47" title="Contact form 1"]' );
+				//local
+				// echo do_shortcode( '[contact-form-7 id="68" title="コンタクトフォーム 1"]' );
+			?>
 		</div>
 	</section>
 	<section class="p-top--corpinfo is-fade">
