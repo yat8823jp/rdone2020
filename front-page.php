@@ -40,9 +40,9 @@
 			</div>
 		</div>
 		<article class="p-slide-panel">
-		<?php
-			$upload_dir = wp_upload_dir();
-		?>
+			<?php
+				$upload_dir = wp_upload_dir();
+			?>
 			<ul class="p-slide-panel__slide js-infiniteslide--left">
 				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0109.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A0109-150x150.jpg" alt="梅田ビルの写真"></a></li>
 				<li><a href="<?php echo get_template_directory_uri() ?>/images/photo/items/CK8A0796.jpg" data-group="gallery" data-modaal-animation="fade" class="gallery"><img src="<?php echo $upload_dir['baseurl'] . "/" . $upload_dir['subdir']; ?>/CK8A0796-150x150.jpg" alt="電線と夏空の写真"></a></li>

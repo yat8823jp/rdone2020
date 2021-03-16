@@ -1,4 +1,5 @@
 jQuery( function( $ ) {
+	$( '.mv' ).addClass( 'is-fade-in' );
 	window.onload = function() {
 		scrollEffect();
 		$( window ).on( 'scroll', function() {

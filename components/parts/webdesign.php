@@ -27,14 +27,16 @@
 								</div>
 							</div>
 							<figcaption class="c-img-description">
-								<dl>
-									<dt><?php the_title(); ?></dt>
-									<dd>
-										<?php if ( SCF::get( 'url' ) ) : ?>
-											<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
-										<?php endif; ?>
-									</dd>
-								</dl>
+								<?php if ( SCF::get( 'url' ) ) : ?>
+									<dl>
+										<dt class="c-img-description__title"><?php the_title(); ?></dt>
+										<dd class="c-img-description__link">
+												<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
+											</dd>
+										</dl>
+								<?php else : ?>
+										<p class="c-img-description__title"><?php the_title(); ?></p>
+								<?php endif; ?>
 							</figcaption>
 						</figure>
 					</li>
@@ -64,18 +66,20 @@
 								<?php if ( SCF::get( 'url' ) ) : ?>
 									<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php the_post_thumbnail( 'webdesign-thumb' ); ?></a>
 								<?php else : ?>
-									<?php the_post_thumbnail( 'full' ); ?>
+									<?php the_post_thumbnail( 'webdesign-thumb' ); ?>
 								<?php endif; ?>
 							</div>
 							<figcaption>
-								<dl class="c-img-description">
-									<dt><?php the_title(); ?></dt>
-									<dd>
-										<?php if ( SCF::get( 'url' ) ) : ?>
+								<?php if ( SCF::get( 'url' ) ) : ?>
+									<dl class="c-img-description">
+										<dt><?php the_title(); ?></dt>
+										<dd>
 											<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
-										<?php endif; ?>
-									</dd>
-								</dl>
+										</dd>
+									</dl>
+								<?php else : ?>
+									<p class="c-img-description__title"><?php the_title(); ?></p>
+								<?php endif; ?>
 							</figcaption>
 						</figure>
 					</li>
