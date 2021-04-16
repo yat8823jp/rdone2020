@@ -164,8 +164,8 @@
 				</dd>
 				<dt>Main client</dt>
 				<dd>
-					TAM Co., Ltd., Raise Tech Co., Ltd.<br>
-					<small>株式会社 TAM, 株式会社 RaiseTech</small>
+					TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne<br>
+					<small>株式会社 TAM, 株式会社 RaiseTech、株式会社 Studio Cologne</small>
 				</dd>
 				<!-- <dt>Qualification</dt>
 				<dd>
