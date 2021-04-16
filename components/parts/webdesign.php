@@ -27,16 +27,19 @@
 								</div>
 							</div>
 							<figcaption class="c-img-description">
-								<?php if ( SCF::get( 'url' ) ) : ?>
-									<dl>
-										<dt class="c-img-description__title"><?php the_title(); ?></dt>
-										<dd class="c-img-description__link">
+								<?php
+									if ( SCF::get( 'url' ) ) : ?>
+										<dl>
+											<dt class="c-img-description__title"><?php the_title(); ?></dt>
+											<dd class="c-img-description__link">
 												<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
 											</dd>
 										</dl>
-								<?php else : ?>
-										<p class="c-img-description__title"><?php the_title(); ?></p>
-								<?php endif; ?>
+									<?php else : ?>
+											<p class="c-img-description__title"><?php the_title(); ?></p>
+									<?php endif; ?>
+									<?php echo imgdescription();
+								?>
 							</figcaption>
 						</figure>
 					</li>
@@ -80,6 +83,7 @@
 								<?php else : ?>
 									<p class="c-img-description__title"><?php the_title(); ?></p>
 								<?php endif; ?>
+								<?php echo imgdescription(); ?>
 							</figcaption>
 						</figure>
 					</li>
@@ -90,4 +94,22 @@
 			</ul>
 		<?php endif;
 	endif;
+?>
+
+<?php
+	function imgdescription() {
+		if ( SCF::get( 'partner-name' ) ) : ?>
+			<dl class="c-img-description__partner">
+				<dt class="c-img-description__partner__title">パートナー：</dt>
+				<?php foreach ( SCF::get( 'partner-group' ) as $groups ) :
+					if ( $groups['partner-url'] ) : ?>
+						<dd class="c-img-description__partner__link"><a href="<?php echo $groups['partner-url']; ?>" target="_blank"><?php echo $groups['partner-name']; ?></a><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
+					<?php else : ?>
+						<dd class="c-img-description__partner__link"><?php echo $groups['partner-name']; ?><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
+					<?php endif; ?>
+				<?php endforeach; ?>
+				</dd>
+			</dl>
+		<?php endif;
+	}
 ?>

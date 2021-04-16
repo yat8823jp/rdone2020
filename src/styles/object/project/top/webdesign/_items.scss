@@ -77,6 +77,11 @@
 					}
 				}
 			}
+			.c-img-description__partner {
+				@include breakpoint( tablet ) {
+					margin-left: 25px;
+				}
+			}
 		}
 	}
 }

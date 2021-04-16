@@ -14,5 +14,15 @@
 		@include breakpoint( pc ) {
 			font-size: 1.4rem;
 		}
-}
+	}
+	&__partner {
+		margin-top: 10px;
+		display: flex;
+		&__title {
+
+		}
+		&__link {
+			margin-right: 10px;
+		}
+	}
 }
