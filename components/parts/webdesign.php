@@ -103,9 +103,9 @@
 				<dt class="c-img-description__partner__title">パートナー：</dt>
 				<?php foreach ( SCF::get( 'partner-group' ) as $groups ) :
 					if ( $groups['partner-url'] ) : ?>
-						<dd class="c-img-description__partner__link"><a href="<?php echo $groups['partner-url']; ?>" target="_blank"><?php echo $groups['partner-name']; ?></a><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
+						<dd class="c-img-description__partner__link"><a href="<?php echo esc_url( $groups['partner-url'] ); ?>" target="_blank"><?php echo esc_html( $groups['partner-name'] ); ?></a><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
 					<?php else : ?>
-						<dd class="c-img-description__partner__link"><?php echo $groups['partner-name']; ?><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
+						<dd class="c-img-description__partner__link"><?php echo esc_html( $groups['partner-name'] ); ?><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
 					<?php endif; ?>
 				<?php endforeach; ?>
 				</dd>
