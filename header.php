@@ -118,13 +118,17 @@
 	<?php else : ?>
 		<?php include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); ?>
 		<header class="l-header p-taxonomy-webdesign">
-			<div class="p-taxonomy-webdesign__inner">
-				<p class="p-backtop"><a href="/">← To the top page of Rish inc.</a></p>
+			<p class="p-backtop"><a href="/">← To the top page of Rish inc.</a></p>
+			<div class="c-inner">
 				<?php global $wp_query;
 				if( $wp_query -> have_posts( $args ) ) :
 					while( $wp_query -> have_posts() ) :
 						$wp_query -> the_post();
 						$title = get_the_title();
+						?>
+							<h1><?php echo esc_html( $title ); ?></h1>
+							</article>
+						<?php
 						if( is_plugin_active( "smart-custom-fields/smart-custom-fields.php" ) ) {
 							$url = esc_url( SCF::get( "url" ) );
 							$release_date = date_create( ( SCF::get( "releasedate" ) ) );
@@ -143,16 +147,16 @@
 						}
 						$type_tags .= ']';
 						if ( $url ) {
-							?><a href="<?php echo $url ?>" target="_blank"><?php echo $url ?></a><br><?php
+							?><a href="<?php echo $url ?>" target="_blank" class="p-taxonomy-webdesign__url"><?php echo $url ?></a><?php
 						}
 						if ( $tags ) {
-							echo $type_tags . "<br>";
+							echo '<p class="p-taxonomy-webdesign__tag">' . $type_tags . "</p>";
 						}
 						if ( $date ) {
-							echo $date . "<br>";
+							echo '<p class="p-taxonomy-webdesign__date">' . $date . "</p>";
 						}
 					endwhile; ?>
 				<?php endif; ?>
-			</div><!--./p-taxonomy-webdesign__inner-->
+			</div><!--./c-inner-->
 		</header>
 	<?php endif; ?>
