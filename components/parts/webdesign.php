@@ -19,11 +19,7 @@
 						<figure class="p-top--webdesign__items__list__figure p-stack">
 							<div class="p-stack__bg">
 								<div class="imgrap">
-									<?php if ( SCF::get( 'url' ) ) : ?>
-										<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php the_post_thumbnail( 'full' ); ?></a>
-									<?php else : ?>
-										<?php the_post_thumbnail( 'full' ); ?>
-									<?php endif; ?>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'full' ); ?></a>
 								</div>
 							</div>
 							<figcaption class="c-img-description">
@@ -66,17 +62,13 @@
 					<li>
 						<figure class="p-top--webdesign__items__list__figure">
 							<div class="imgrap">
-								<?php if ( SCF::get( 'url' ) ) : ?>
-									<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php the_post_thumbnail( 'webdesign-thumb' ); ?></a>
-								<?php else : ?>
-									<?php the_post_thumbnail( 'webdesign-thumb' ); ?>
-								<?php endif; ?>
+								<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'webdesign-thumb' ); ?></a>
 							</div>
 							<figcaption>
 								<?php if ( SCF::get( 'url' ) ) : ?>
 									<dl class="c-img-description">
-										<dt><?php the_title(); ?></dt>
-										<dd>
+										<dt class="c-img-description__title"><?php the_title(); ?></dt>
+										<dd class="c-img-description__link">
 											<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
 										</dd>
 									</dl>
@@ -94,22 +86,4 @@
 			</ul>
 		<?php endif;
 	endif;
-?>
-
-<?php
-	function imgdescription() {
-		if ( SCF::get( 'partner-name' ) ) : ?>
-			<dl class="c-img-description__partner">
-				<dt class="c-img-description__partner__title">パートナー：</dt>
-				<?php foreach ( SCF::get( 'partner-group' ) as $groups ) :
-					if ( $groups['partner-url'] ) : ?>
-						<dd class="c-img-description__partner__link"><a href="<?php echo esc_url( $groups['partner-url'] ); ?>" target="_blank"><?php echo esc_html( $groups['partner-name'] ); ?></a><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
-					<?php else : ?>
-						<dd class="c-img-description__partner__link"><?php echo esc_html( $groups['partner-name'] ); ?><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
-					<?php endif; ?>
-				<?php endforeach; ?>
-				</dd>
-			</dl>
-		<?php endif;
-	}
 ?>

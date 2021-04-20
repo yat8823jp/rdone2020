@@ -1,61 +1,54 @@
 .p-webdesign {
-	// height: 337px;
-	height: 100%;
-	position: relative;
-	.c-inner {
-		width: 100%;
-		height: 100%;
+	width: 100%;
+	margin: auto;
+	@include breakpoint( tablet ) {
+		max-width: 800px;
+	}
+	@include breakpoint( pc ) {
+		max-width: 1000px;
+	}
+	&__contents {
 		padding: 35px;
-		position: absolute;
-		background-image: url( images/common/bg_r.svg );
-		background-size: contain;
-		background-position: right bottom;
-		background-repeat: no-repeat;
-		top: 0;
+		font-size: 1.4rem;
 		@include breakpoint( tablet ) {
+			padding: 40px 80px;
 		}
 		@include breakpoint( pc ) {
-			padding: 0 70px;
+			padding: 50px 0;
 		}
 	}
-	h1 {
-		padding: 0;
-		margin: 35px 0 0;
-		font-size: 3.2rem;
+	&__imgs {
+		padding: 35px;
+		background: #ededed;
 		@include breakpoint( tablet ) {
+			padding: 70px 0;
 		}
 		@include breakpoint( pc ) {
-			margin-top: 70px;
+			padding: 100px 0;
+			margin-bottom: 100px;
 		}
-	}
-	&__url {
-		margin-bottom: 27.5px;
-		font-family: 'Vollkorn';
-		font-size: 1.4rem;
-		text-decoration: none;
-		color: #252522;
-		display: inline-block;
-		@include breakpoint( tablet ) {
+		ul {
+			width: 100%;
+			margin: auto;
+			display: block;
+			@include breakpoint( tablet ) {
+				max-width: 600px;
+			}
+			@include breakpoint( pc ) {
+				max-width: 800px;
+			}
+			li {
+				width: 100%;
+				margin-bottom: 35px;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					margin-bottom: 100px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
-		@include breakpoint( pc ) {
-			margin-bottom: 55px;
-		}
-	}
-	&__tag {
-		font-family: 'Vollkorn';
-		font-size: 1.4rem;
-		color: #252522;
-	}
-	&__date {
-		font-family: 'Vollkorn';
-		font-size: 1.4rem;
-		color: #252522;
-	}
-	.bg-r {
-		width: 350px;
-		height: 270px;
-		position: absolute;
-		top: 0;
-		right: 0;
 	}
 }

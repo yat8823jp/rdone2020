@@ -73,13 +73,13 @@
 					@include breakpoint( tablet ) {
 					}
 					@include breakpoint( pc ) {
-						width: 670px;
+						// width: 670px;
 					}
 				}
-			}
-			.c-img-description__partner {
-				@include breakpoint( tablet ) {
-					margin-left: 25px;
+				&__partner {
+					@include breakpoint( tablet ) {
+						margin-left: 25px;
+					}
 				}
 			}
 		}
