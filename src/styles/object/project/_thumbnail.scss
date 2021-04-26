@@ -5,7 +5,7 @@
 		padding: 50px;
 	}
 	@include breakpoint( pc ) {
-		padding: 100px 0;
+		padding: 100px;
 	}
 	&__imgbox {
 		max-width: 600px;
@@ -20,7 +20,6 @@
 	}
 	&--webdesign {
 		@extend .p-thumbnail;
-		// height: 100%;
 		background: #ededed;
 		position: relative;
 		@include breakpoint( tablet ) {

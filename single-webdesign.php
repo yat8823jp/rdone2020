@@ -25,8 +25,8 @@
 			</div>
 		<?php endif; ?>
 	</article>
-	<article class="p-webdesign">
-		<?php if ( $wp_query -> have_posts() ) : ?>
+	<?php if ( $wp_query -> have_posts() && get_the_content() ) : ?>
+		<article class="p-webdesign">
 			<?php while ( $wp_query -> have_posts() ) : $wp_query -> the_post(); ?>
 				<article class="p-webdesign__contents">
 					<?php the_content(); ?>
@@ -46,6 +46,6 @@
 			<?php endwhile;
 				wp_reset_postdata();
 			?>
-		<?php endif; ?>
-	</article>
+		</article>
+	<?php endif; ?>
 <?php get_footer(); ?>
