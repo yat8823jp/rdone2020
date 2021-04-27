@@ -94,4 +94,9 @@ table {
 			@content ;
 		}
 	}
+	@if $point == contents {
+		@media ( min-width: 1300px ) {
+			@content ;
+		}
+	}
 }

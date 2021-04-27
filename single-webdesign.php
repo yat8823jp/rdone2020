@@ -37,7 +37,7 @@
 							<?php
 								$images = SCF::get( 'sitecapturei-mage' );
 								foreach( $images as $image ) :
-									echo '<li>' . wp_get_attachment_image( $image, 'large' ) . '</li>';
+									echo '<li>' . wp_get_attachment_image( $image, 'full' ) . '</li>';
 								endforeach;
 							?>
 						</ul>

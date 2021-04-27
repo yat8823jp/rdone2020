@@ -117,7 +117,7 @@ function create_webdesign_taxonomies() {
 add_action( 'init', 'create_webdesign_taxonomies', 0 );
 
 function imgdescription() {
-	if ( SCF::get( 'partner-name' ) ) : ?>
+	if ( SCF::get( 'partner-group' )[0]['partner-name'] ) : ?>
 		<dl class="c-img-description__partner">
 			<dt class="c-img-description__partner__title">パートナー：</dt>
 			<?php foreach ( SCF::get( 'partner-group' ) as $groups ) :

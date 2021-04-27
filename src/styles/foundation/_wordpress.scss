@@ -352,6 +352,7 @@ a {
 }
 
 #wpadminbar {
+	position: fixed;
 	@include breakpoint( tablet ) {
 	}
 	@include breakpoint( pc ) {

@@ -12,7 +12,8 @@
 						$release_date = date_create( ( SCF::get( "releasedate" ) ) );
 						$date =  date_format( $release_date, 'M.Y' );
 					}
-					$tags = get_terms( 'type_tag');
+
+					$tags = get_the_terms( $post -> ID, 'type_tag');
 					$type_tags = 'Website[ ';
 					if ( ! is_array( $tarms ) ) {
 						foreach( $tags as $tag ) {
