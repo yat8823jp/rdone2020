@@ -15,9 +15,11 @@ function custom_theme_support() {
 		'default-image' => get_template_directory_uri() . '/images/top/header/001.jpg',
 		'uploads'       => true,
 	) );
-	add_image_size( 'webdesign-thumb', 350, 9999 );
+	add_image_size( 'webdesign_thumb', 350, 9999 );
 }
 add_action( 'after_setup_theme', 'custom_theme_support' );
+add_filter( 'big_image_size_threshold', '__return_false' );
+
 
 if ( ! isset( $content_width ) ) :
 	$content_width = 1200;
