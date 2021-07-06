@@ -131,3 +131,19 @@ function imgdescription() {
 		</dl>
 	<?php endif;
 }
+
+function ogpimg() {
+	global $post;
+	$str           = $post -> post_content;
+	$searchPattern = '/<img.*?src = (["\'])(.+?)\1.*?>/i'; //投稿にイメージがあるか調べる
+	if ( has_post_thumbnail() ){//投稿にサムネイルがある場合の処理
+		$image_id = get_post_thumbnail_id( $post -> ID );
+		$image    = wp_get_attachment_image_src( $image_id, 'full' );
+		$ogimage  = $image[0];
+	} else if ( preg_match( $searchPattern, $str, $imgurl ) ) {//投稿にサムネイルは無いが画像がある場合の処理
+		$ogimage = $imgurl[2];
+	} else {//投稿にサムネイルも画像も無い場合、もしくはアーカイブページの処理
+		$ogimage = COMMON_PFIX . "/img/ogp_image.jpg";
+	}
+	return $ogimage;
+}

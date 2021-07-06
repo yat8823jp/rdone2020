@@ -16,7 +16,12 @@
 	<meta property="og:url" content="<?php the_permalink() ?>">
 	<?php endif ;?>
 	<meta property="og:description" content="<?php bloginfo('description'); ?>">
-
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="rish">
+	<meta name="twitter:title" content="<?php the_title(); ?>">
+	<meta name="twitter:description" content="<?php echo wp_strip_all_tags ( get_the_excerpt() ); ?>">
+	<meta name="twitter:image" content="<?php echo ogpimg(); ?>">
+	<meta property="og:url" content="<?php the_permalink(); ?>">
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo COMMON_PFIX; ?>/images/common/ico/favicons/favicon.ico">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="<?php echo COMMON_PFIX; ?>/images/common/ico/favicons/favicon.ico">
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo COMMON_PFIX; ?>/images/common/ico/favicons/apple-touch-icon-57x57.png">
@@ -37,7 +42,8 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo COMMON_PFIX; ?>/images/common/ico/favicons/favicon-32x32.png">
 	<link rel="manifest" href="<?php echo COMMON_PFIX; ?>/images/common/ico/favicons/manifest.json">
 	<meta name="msapplication-TileColor" content="#2d88ef">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">	<script>
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
