@@ -16,15 +16,18 @@
 				</dl>
 			</header>
 			<article class="p-top-section__items--2column">
-				<?php get_template_part( 'components/parts/webdesign' ); ?>
+				<?php
+					$args = [ 'template_name' => 'webdesign' ];
+					get_template_part( 'components/parts/webdesign', '', $args );
+				?>
 			</article>
 		</div>
 	</section>
-	<section id="print" class="p-top-section p-top--print is-fade">
-		<h2 class="headline">Print</h2>
+	<section id="print" class="p-top-section is-fade">
+		<h2 class="headline--print">Print</h2>
 		<div class="c-inner">
-			<header class="p-top-section__header">
-				<dl class="description is-movetxt-r">
+			<header class="p-top-section__header--print">
+				<dl class="description--print is-movetxt-r">
 					<dt class="title">
 						Printed matter
 					</dt>
@@ -33,11 +36,20 @@
 					</dd>
 				</dl>
 			</header>
-			<article class="p-top--print__items">
-				<ul class="p-top--print__items__list">
-					<li class="p-top--print__items__list__item">
-
-						<img src="<?php echo get_template_directory_uri(); ?>/images/print/card_blueocean.jpg" alt="株式会社ブルーオーシャン様名刺">
+			<article class="p-top-masonry">
+				<ul class="p-top-masonry__list">
+					<li class="p-top-masonry__list__item">
+						<figure class="p-top-masonry__list__figure">
+							<div class="c-imgwrap">
+							<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/print/card_blueocean.jpg" alt="株式会社ブルーオーシャン様名刺"></a>
+							</div>
+							<dl class="c-img-description">
+								<dt class="c-img-description__title"><?php the_title(); ?></dt>
+								<dd class="c-img-description__link">
+									<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
+								</dd>
+							</dl>
+						</figure>
 					</li>
 				</ul>
 			</article>

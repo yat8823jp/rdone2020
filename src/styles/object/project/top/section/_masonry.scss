@@ -1,0 +1,12 @@
+.p-top-masonry {
+	&__list {
+		&__item {
+			@include breakpoint( tablet ) {
+				width: 300px;
+			}
+		}
+	}
+	&__figure {
+
+	}
+}

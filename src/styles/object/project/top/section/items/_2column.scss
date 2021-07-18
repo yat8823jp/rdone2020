@@ -26,19 +26,6 @@
 			@include breakpoint( pc ) {
 				margin-bottom: 80px;
 			}
-
-			.imgrap {
-				margin-bottom: 10px;
-				@include hovanime;
-				@include breakpoint( tablet ) {
-					margin-bottom: 20px;
-				}
-				@include breakpoint( pc ) {
-				}
-				> a {
-					display: block;
-				}
-			}
 		}
 		&__figure {
 			margin: auto;

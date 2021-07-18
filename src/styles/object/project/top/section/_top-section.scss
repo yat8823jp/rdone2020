@@ -31,6 +31,15 @@
 			@include breakpoint( wide ) {
 			}
 		}
+		&--print {
+			@extend .headline;
+			margin-left: 0;
+			@include breakpoint( tablet ) {
+				margin-left: 25px;
+			}
+			@include breakpoint( pc ) {
+			}
+		}
 	}
 	&__header {
 		height: 280px;
@@ -48,11 +57,13 @@
 		.description {
 			top: 100px;
 			right: 0;
+			left: 0;
 			position: absolute;
 			font-family: 'Vollkorn', serif;
 			@include breakpoint( tablet ) {
 				width: 57%;
 				top: 100px;
+				left: inherit;
 			}
 			@include breakpoint( pc ) {
 				width: inherit;
@@ -85,6 +96,22 @@
 				}
 				@include breakpoint( wide ) {
 				}
+			}
+			&--print {
+				@extend .description;
+				@include breakpoint( pc ) {
+					left: 20%;
+				}
+			}
+		}
+		&--print {
+			@extend .p-top-section__header;
+			height: 190px;
+			@include breakpoint( tablet ) {
+				height: 230px;
+			}
+			@include breakpoint( pc ) {
+				height: 300px;
 			}
 		}
 	}//&__header
