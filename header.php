@@ -17,7 +17,7 @@
 	<?php endif ;?>
 	<meta property="og:description" content="<?php bloginfo('description'); ?>">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="rish">
+	<meta name="twitter:site" content="rish0820">
 	<meta name="twitter:title" content="<?php the_title(); ?>">
 	<meta name="twitter:description" content="<?php echo wp_strip_all_tags ( get_the_excerpt() ); ?>">
 	<meta name="twitter:image" content="<?php echo ogpimg(); ?>">

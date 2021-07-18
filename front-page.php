@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <article class="l-main">
-	<section class="p-top--webdesign is-fade">
-		<h2>Web<span>Design</span></h2>
+	<section class="p-top-section is-fade">
+		<h2 class="headline">Web<span>Design</span></h2>
 		<div class="c-inner">
-			<header class="p-top--webdesign__header">
+			<header class="p-top-section__header">
 				<dl class="description is-movetxt-r">
 					<dt class="title">
 						Website architecture
@@ -15,13 +15,36 @@
 					</dd>
 				</dl>
 			</header>
-			<article class="p-top--webdesign__items">
+			<article class="p-top-section__items--2column">
 				<?php get_template_part( 'components/parts/webdesign' ); ?>
 			</article>
 		</div>
 	</section>
+	<section id="print" class="p-top-section p-top--print is-fade">
+		<h2 class="headline">Print</h2>
+		<div class="c-inner">
+			<header class="p-top-section__header">
+				<dl class="description is-movetxt-r">
+					<dt class="title">
+						Printed matter
+					</dt>
+					<dd class="text">
+						Product and printed matter design work.
+					</dd>
+				</dl>
+			</header>
+			<article class="p-top--print__items">
+				<ul class="p-top--print__items__list">
+					<li class="p-top--print__items__list__item">
+
+						<img src="<?php echo get_template_directory_uri(); ?>/images/print/card_blueocean.jpg" alt="株式会社ブルーオーシャン様名刺">
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
 	<section id="photo" class="p-top-photo is-fade">
-		<div class="header">
+		<header class="header">
 			<div class="inner">
 				<h2 class="headline">
 					Photography
@@ -38,7 +61,7 @@
 					</dd>
 				</dl>
 			</div>
-		</div>
+		</header>
 		<article class="p-slide-panel">
 			<?php
 				$upload_dir = wp_upload_dir();

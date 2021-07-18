@@ -1,4 +1,4 @@
-.p-top--webdesign {
+.p-top-section {
 	padding: 70px 20px 0;
 	@include breakpoint( tablet ) {
 		padding: 50px 20px 0x;
@@ -9,7 +9,7 @@
 	}
 	@include breakpoint( wide ) {
 	}
-	h2 {
+	.headline {
 		margin-left: -16px;
 		font-size: 6.0rem;
 		font-family: 'Meie Script', cursive;
