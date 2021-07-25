@@ -1,12 +1,16 @@
 .p-top-masonry {
 	&__list {
+		@include breakpoint( tablet ) {
+			display: flex;
+		}
 		&__item {
+			margin-bottom: 40px;
 			@include breakpoint( tablet ) {
-				width: 300px;
+				width: 200px;
+				// width: 300px;
 			}
 		}
 	}
 	&__figure {
-
 	}
 }

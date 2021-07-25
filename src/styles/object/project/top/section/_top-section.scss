@@ -31,15 +31,6 @@
 			@include breakpoint( wide ) {
 			}
 		}
-		&--print {
-			@extend .headline;
-			margin-left: 0;
-			@include breakpoint( tablet ) {
-				margin-left: 25px;
-			}
-			@include breakpoint( pc ) {
-			}
-		}
 	}
 	&__header {
 		height: 280px;
@@ -74,8 +65,10 @@
 			@include breakpoint( wide ) {
 			}
 			> .title {
+				margin-bottom: 20px;
 				font-size: 3.0rem;
 				font-weight: bold;
+				line-height: 1;
 				@include breakpoint( tablet ) {
 				}
 				@include breakpoint( pc ) {
@@ -97,22 +90,56 @@
 				@include breakpoint( wide ) {
 				}
 			}
-			&--print {
-				@extend .description;
-				@include breakpoint( pc ) {
-					left: 20%;
+		}
+	}//&__header
+	&--print {
+		@extend .p-top-section;
+		.headline {
+			font-size: 5.0rem;
+			margin-left: 0;
+			@include breakpoint( tablet ) {
+				margin-left: 25px;
+				font-size: 10vw;
+			}
+			@include breakpoint( pc ) {
+			}
+			span {
+				margin-left: -30px;
+				@include breakpoint( tablet ) {
 				}
 			}
 		}
-		&--print {
-			@extend .p-top-section__header;
+		.p-top-section__header {
 			height: 190px;
+			margin-bottom: 50px;
 			@include breakpoint( tablet ) {
-				height: 230px;
+				height: 60vh;
 			}
 			@include breakpoint( pc ) {
-				height: 300px;
+				height: 250px;
+			}
+			.description {
+				@include breakpoint( tablet ) {
+					top: 150px;
+				}
+				@include breakpoint( pc ) {
+					top: 200px;
+					left: 55%;
+				}
+				> .title {
+					@include breakpoint( pc ) {
+						font-size: 2.5vw;
+					}
+				}
 			}
 		}
-	}//&__header
+		.c-img-description__title {
+			@include breakpoint( tablet ) {
+				font-size: 1.2rem;
+			}
+		}
+		.c-img-description__link {
+			font-size: 1rem;
+		}
+	}
 }

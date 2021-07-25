@@ -23,13 +23,13 @@
 			</article>
 		</div>
 	</section>
-	<section id="print" class="p-top-section is-fade">
-		<h2 class="headline--print">Print</h2>
-		<div class="c-inner">
-			<header class="p-top-section__header--print">
-				<dl class="description--print is-movetxt-r">
+	<section id="print" class="p-top-section--print is-fade">
+		<h2 class="headline">Print&amp;<span>Graphic</span></h2>
+		<div class="c-inner u-mt-20">
+			<header class="p-top-section__header">
+				<dl class="description is-movetxt-r">
 					<dt class="title">
-						Printed matter
+						Printed matter and graphics
 					</dt>
 					<dd class="text">
 						Product and printed matter design work.
@@ -37,11 +37,24 @@
 				</dl>
 			</header>
 			<article class="p-top-masonry">
-				<ul class="p-top-masonry__list">
+				<ul class="p-top-masonry__list js-masonry">
+					<li class="p-top-masonry__list__item js-masonry__item">
+						<figure class="p-top-masonry__list__figure">
+							<div class="c-imgwrap">
+								<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/print/4M3A9073.jpg" alt="Rish Inc. 名刺"></a>
+							</div>
+							<dl class="c-img-description">
+								<dt class="c-img-description__title"><?php the_title(); ?></dt>
+								<dd class="c-img-description__link">
+									<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
+								</dd>
+							</dl>
+						</figure>
+					</li>
 					<li class="p-top-masonry__list__item">
 						<figure class="p-top-masonry__list__figure">
 							<div class="c-imgwrap">
-							<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/print/card_blueocean.jpg" alt="株式会社ブルーオーシャン様名刺"></a>
+								<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/print/card_blueocean.jpg" alt="株式会社ブルーオーシャン様名刺"></a>
 							</div>
 							<dl class="c-img-description">
 								<dt class="c-img-description__title"><?php the_title(); ?></dt>
