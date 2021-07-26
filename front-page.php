@@ -37,34 +37,10 @@
 				</dl>
 			</header>
 			<article class="p-top-masonry">
-				<ul class="p-top-masonry__list js-masonry">
-					<li class="p-top-masonry__list__item js-masonry__item">
-						<figure class="p-top-masonry__list__figure">
-							<div class="c-imgwrap">
-								<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/print/4M3A9073.jpg" alt="Rish Inc. 名刺"></a>
-							</div>
-							<dl class="c-img-description">
-								<dt class="c-img-description__title"><?php the_title(); ?></dt>
-								<dd class="c-img-description__link">
-									<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
-								</dd>
-							</dl>
-						</figure>
-					</li>
-					<li class="p-top-masonry__list__item">
-						<figure class="p-top-masonry__list__figure">
-							<div class="c-imgwrap">
-								<a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/print/card_blueocean.jpg" alt="株式会社ブルーオーシャン様名刺"></a>
-							</div>
-							<dl class="c-img-description">
-								<dt class="c-img-description__title"><?php the_title(); ?></dt>
-								<dd class="c-img-description__link">
-									<a href="<?php echo esc_html( SCF::get( 'url' ) ); ?>" target="_blank"><?php echo esc_html( str_replace( array( 'http://', 'https://' ) , '', SCF::get( 'url' ) ) ); ?></a>
-								</dd>
-							</dl>
-						</figure>
-					</li>
-				</ul>
+				<?php
+					$args = [ 'template_name' => 'print' ];
+					get_template_part( 'components/parts/print', '', $args );
+				?>
 			</article>
 		</div>
 	</section>

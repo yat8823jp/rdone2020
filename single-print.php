@@ -1,16 +1,11 @@
 <?php
 	if ( is_plugin_active( "smart-custom-fields/smart-custom-fields.php" ) ) :
 		$args = array (
-			'post_type'     => 'webdesign',
-			'meta_query'    => array (
-				array (
-					'key'   => 'sticky',
-					'value' => true
-				)
-			)
+			'post_type' => 'print'
 		);
 	endif;
 	global $wp_query;
+	// $wp_query = new WP_Query( $args );
 ?>
 <?php get_header(); ?>
 	<article class="p-thumbnail--webdesign">

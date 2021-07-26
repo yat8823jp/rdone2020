@@ -14,17 +14,19 @@
 					}
 
 					$tags = get_the_terms( $post -> ID, 'type_tag');
-					$type_tags = 'Website[ ';
-					if ( ! is_array( $tarms ) ) {
-						foreach( $tags as $tag ) {
-							if ( $tag === end( $tags ) ) {
-								$type_tags .= $tag -> name;
-							} else {
-								$type_tags .= $tag -> name . ', ';
+					if ( $tags ) :
+						$type_tags = 'Website[ ';
+						if ( ! is_array( $tarms ) ) {
+							foreach( $tags as $tag ) {
+								if ( $tag === end( $tags ) ) {
+									$type_tags .= $tag -> name;
+								} else {
+									$type_tags .= $tag -> name . ', ';
+								}
 							}
 						}
-					}
-					$type_tags .= ' ]'; ?>
+						$type_tags .= ' ]';
+					endif; ?>
 					<h1><?php echo esc_html( $title ); ?></h1>
 					<?php if ( $url ) : ?>
 						<a href="<?php echo $url ?>" target="_blank" class="p-header--webdesign__url"><?php echo $url ?></a>

@@ -1,8 +1,5 @@
 <?php
 	if ( $args['template_name'] ) :
-		if ( $args['template_name'] == 'webdeisgn' ) :
-			$class = 'p-top-section__items--2column';
-		endif;
 		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 		if ( is_plugin_active( "smart-custom-fields/smart-custom-fields.php" ) ) :
 			$sticky = SCF::get( 'sticky' );
