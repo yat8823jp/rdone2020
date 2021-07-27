@@ -94,6 +94,7 @@
 	}//&__header
 	&--print {
 		@extend .p-top-section;
+		padding: 10px 50px 0;
 		.headline {
 			font-size: 5.0rem;
 			margin-left: 0;
@@ -125,6 +126,9 @@
 				@include breakpoint( pc ) {
 					top: 200px;
 					left: 55%;
+				}
+				@include breakpoint( full ) {
+					top: 250px;
 				}
 				> .title {
 					@include breakpoint( pc ) {

@@ -5,7 +5,7 @@
 			$query_args = array (
 				'post_type' => $args['template_name']
 			);
-			$wp_query = new WP_Query( $query_args );
+				$wp_query = new WP_Query( $query_args );
 			if ( $wp_query -> have_posts() ) : ?>
 				<ul class="p-top-masonry__list js-masonry">
 					<?php while ( $wp_query -> have_posts() ) : $wp_query -> the_post(); ?>

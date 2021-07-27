@@ -4,10 +4,13 @@
 			display: flex;
 		}
 		&__item {
-			margin-bottom: 40px;
+			width: auto;
+			max-width: 300px;
+			margin: 0 auto 40px;
 			@include breakpoint( tablet ) {
 				width: 200px;
-				// width: 300px;
+				margin: unset;
+				margin-bottom: 40px;
 			}
 		}
 	}

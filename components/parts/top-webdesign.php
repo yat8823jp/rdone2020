@@ -12,7 +12,7 @@
 					)
 				)
 			);
-			if ( $args['template_name'] == 'webdeisgn' ) :
+			if ( $args['template_name'] == 'webdesign' ) :
 				$wp_query = new WP_Query( $query_args );
 				if ( $wp_query -> have_posts() ) : ?>
 					<ul class="p-top-section__items--2column__sticky">

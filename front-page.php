@@ -18,7 +18,7 @@
 			<article class="p-top-section__items--2column">
 				<?php
 					$args = [ 'template_name' => 'webdesign' ];
-					get_template_part( 'components/parts/webdesign', '', $args );
+					get_template_part( 'components/parts/top-webdesign', '', $args );
 				?>
 			</article>
 		</div>
@@ -39,7 +39,7 @@
 			<article class="p-top-masonry">
 				<?php
 					$args = [ 'template_name' => 'print' ];
-					get_template_part( 'components/parts/print', '', $args );
+					get_template_part( 'components/parts/top-print', '', $args );
 				?>
 			</article>
 		</div>
