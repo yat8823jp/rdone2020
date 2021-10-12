@@ -75,6 +75,7 @@ function custom_post_webdesign_init() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
+		'show_in_rest'       => true,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 	);
 
@@ -100,7 +101,7 @@ function create_webdesign_taxonomies() {
 		'add_or_remove_items'        => 'Add or remove type_tags',
 		'choose_from_most_used'      => 'Choose from the most used type_tags',
 		'not_found'                  => 'No type_tags found.',
-		'menu_name'                  => 'type_tags',
+		'menu_name'                  => 'type_tags'
 	);
 
 	$args = array(
@@ -150,45 +151,13 @@ function custom_post_print_init() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
+		'show_in_rest'       => true,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 	);
 
 	register_post_type( 'print', $args );
 }
 add_action( 'init', 'custom_post_print_init' );
-
-//印刷物実績用カスタム分類
-// function create_print_taxonomies() {
-// 	$labels = array(
-// 		'name'                       => 'type_tags',
-// 		'singular_name'              => 'type_tag',
-// 		'search_items'               => 'Search type_tags',
-// 		'popular_items'              => 'Popular type_tags',
-// 		'all_items'                  => 'All type_tags',
-// 		'parent_item'                => null,
-// 		'parent_item_colon'          => null,
-// 		'edit_item'                  => 'Edit type_tag',
-// 		'update_item'                => 'Update type_tag',
-// 		'add_new_item'               => 'Add New type_tag',
-// 		'new_item_name'              => 'New type_tag Name',
-// 		'separate_items_with_commas' => 'Separate type_tags with commas',
-// 		'add_or_remove_items'        => 'Add or remove type_tags',
-// 		'choose_from_most_used'      => 'Choose from the most used type_tags',
-// 		'not_found'                  => 'No type_tags found.',
-// 	);
-
-// 	$args = array(
-// 		'hierarchical'          => false,
-// 		'labels'                => $labels,
-// 		'show_ui'               => true,
-// 		'show_admin_column'     => true,
-// 		'update_count_callback' => '_update_post_term_count',
-// 		'query_var'             => true,
-// 	);
-
-// 	register_taxonomy( 'type_tag', 'print', $args );
-// }
-// add_action( 'init', 'create_print_taxonomies', 0 );
 
 function imgdescription() {
 	if ( SCF::get( 'partner-group' )[0]['partner-name'] ) : ?>
