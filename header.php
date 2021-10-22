@@ -17,7 +17,7 @@
 	<?php endif ;?>
 	<meta property="og:description" content="<?php bloginfo('description'); ?>">
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="rish">
+	<meta name="twitter:site" content="rish0820">
 	<meta name="twitter:title" content="<?php the_title(); ?>">
 	<meta name="twitter:description" content="<?php echo wp_strip_all_tags ( get_the_excerpt() ); ?>">
 	<meta name="twitter:image" content="<?php echo ogpimg(); ?>">
@@ -59,8 +59,12 @@
 <body <?php body_class(); ?>>
 	<div class="p-bgborder is-fade"></div>
 	<?php wp_body_open(); ?>
-	<?php if( is_front_page() || is_home() ) : ?>
-		<?php get_template_part( 'components/common/header-home' ); ?>
-	<?php else : ?>
-		<?php get_template_part( 'components/common/header-other' ); ?>
-	<?php endif; ?>
+	<?php
+		if ( is_front_page() || is_home() ) :
+			get_template_part( 'components/common/header-home' );
+		elseif( is_404() ) :
+			get_template_part( 'components/common/header-404' );
+		else :
+			get_template_part( 'components/common/header-other' );
+		endif;
+	?>

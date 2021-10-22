@@ -39,41 +39,32 @@
   z-index: 9999;
   overflow: auto;
   opacity: 1;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .modaal-wrapper * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-backface-visibility: hidden;
 }
-
 .modaal-wrapper .modaal-close {
   border: none;
   background: transparent;
   padding: 0;
   -webkit-appearance: none;
 }
-
 .modaal-wrapper.modaal-start_none {
   display: none;
   opacity: 1;
 }
-
 .modaal-wrapper.modaal-start_fade {
   opacity: 0;
 }
-
 .modaal-wrapper *[tabindex="0"] {
   outline: none !important;
 }
-
 .modaal-wrapper.modaal-fullscreen {
   overflow: hidden;
 }
@@ -84,7 +75,6 @@
   width: 100%;
   height: 100%;
 }
-
 .modaal-fullscreen .modaal-outer-wrapper {
   display: block;
 }
@@ -98,7 +88,6 @@
   text-align: center;
   padding: 80px 25px;
 }
-
 .modaal-fullscreen .modaal-inner-wrapper {
   padding: 0;
   display: block;
@@ -115,17 +104,14 @@
   max-width: 1000px;
   border-radius: 0px;
   background: #fff;
-  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   cursor: auto;
 }
-
 .modaal-container.is_loading {
   height: 100px;
   width: 100px;
   overflow: hidden;
 }
-
 .modaal-fullscreen .modaal-container {
   max-width: none;
   height: 100%;
@@ -143,19 +129,15 @@
   height: 50px;
   background: rgba(0, 0, 0, 0);
   border-radius: 100%;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 .modaal-close:focus, .modaal-close:hover {
   outline: none;
   background: #fff;
 }
-
 .modaal-close:focus:before, .modaal-close:focus:after, .modaal-close:hover:before, .modaal-close:hover:after {
   background: #b93d0c;
 }
-
 .modaal-close span {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -167,7 +149,6 @@
   width: 1px !important;
   overflow: hidden;
 }
-
 .modaal-close:before, .modaal-close:after {
   display: block;
   content: " ";
@@ -178,20 +159,14 @@
   height: 22px;
   border-radius: 4px;
   background: #fff;
-  -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
-
 .modaal-close:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-
 .modaal-close:after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 .modaal-fullscreen .modaal-close {
   background: #afb7bc;
   right: 10px;
@@ -217,24 +192,19 @@
   border: none;
   background: transparent;
 }
-
 .modaal-confirm-btn.modaal-ok {
   padding: 10px 15px;
   color: #fff;
   background: #555;
   border-radius: 3px;
-  -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
-
 .modaal-confirm-btn.modaal-ok:hover {
   background: #2f2f2f;
 }
-
 .modaal-confirm-btn.modaal-cancel {
   text-decoration: underline;
 }
-
 .modaal-confirm-btn.modaal-cancel:hover {
   text-decoration: none;
   color: #2f2f2f;
@@ -248,7 +218,6 @@
     opacity: 1;
   }
 }
-
 @-webkit-keyframes instaReveal {
   0% {
     opacity: 0;
@@ -257,33 +226,27 @@
     opacity: 1;
   }
 }
-
 .modaal-instagram .modaal-container {
   width: auto;
   background: transparent;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
-
 .modaal-instagram .modaal-content-container {
   padding: 0;
   background: transparent;
 }
-
 .modaal-instagram .modaal-content-container > blockquote {
   width: 1px !important;
   height: 1px !important;
   opacity: 0 !important;
 }
-
 .modaal-instagram iframe {
   opacity: 0;
   margin: -6px !important;
   border-radius: 0 !important;
   width: 1000px !important;
   max-width: 800px !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   -webkit-animation: instaReveal 1s linear forwards;
           animation: instaReveal 1s linear forwards;
 }
@@ -292,7 +255,6 @@
   padding-left: 140px;
   padding-right: 140px;
 }
-
 .modaal-image .modaal-container {
   width: auto;
   max-width: 100%;
@@ -306,11 +268,9 @@
 .modaal-gallery-item {
   display: none;
 }
-
 .modaal-gallery-item img {
   display: block;
 }
-
 .modaal-gallery-item.is_active {
   display: block;
 }
@@ -324,7 +284,6 @@
   text-align: center;
   color: #fff;
 }
-
 .modaal-gallery-label:focus {
   outline: none;
 }
@@ -332,8 +291,7 @@
 .modaal-gallery-control {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
   cursor: pointer;
   color: #fff;
@@ -342,24 +300,19 @@
   background: rgba(0, 0, 0, 0);
   border: none;
   border-radius: 100%;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 .modaal-gallery-control.is_hidden {
   opacity: 0;
   cursor: default;
 }
-
 .modaal-gallery-control:focus, .modaal-gallery-control:hover {
   outline: none;
   background: #fff;
 }
-
 .modaal-gallery-control:focus:before, .modaal-gallery-control:focus:after, .modaal-gallery-control:hover:before, .modaal-gallery-control:hover:after {
   background: #afb7bc;
 }
-
 .modaal-gallery-control span {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -371,7 +324,6 @@
   width: 1px !important;
   overflow: hidden;
 }
-
 .modaal-gallery-control:before, .modaal-gallery-control:after {
   display: block;
   content: " ";
@@ -382,27 +334,21 @@
   height: 18px;
   border-radius: 4px;
   background: #fff;
-  -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
-
 .modaal-gallery-control:before {
   margin: -5px 0 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-
 .modaal-gallery-control:after {
   margin: 5px 0 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modaal-gallery-next-inner {
   left: 100%;
   margin-left: 40px;
 }
-
 .modaal-gallery-next-outer {
   right: 45px;
 }
@@ -410,24 +356,18 @@
 .modaal-gallery-prev:before, .modaal-gallery-prev:after {
   left: 22px;
 }
-
 .modaal-gallery-prev:before {
   margin: 5px 0 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-
 .modaal-gallery-prev:after {
   margin: -5px 0 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 .modaal-gallery-prev-inner {
   right: 100%;
   margin-right: 40px;
 }
-
 .modaal-gallery-prev-outer {
   left: 45px;
 }
@@ -443,14 +383,12 @@
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background: #000;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .modaal-video-container iframe,
 .modaal-video-container object,
 .modaal-video-container embed {
@@ -478,76 +416,72 @@
     height: 731px;
   }
 }
-
 @media only screen and (max-width: 1140px) {
   .modaal-image .modaal-inner-wrapper {
     padding-left: 25px;
     padding-right: 25px;
   }
+
   .modaal-gallery-control {
     top: auto;
     bottom: 20px;
-    -webkit-transform: none;
-            transform: none;
+    transform: none;
     background: rgba(0, 0, 0, 0.7);
   }
   .modaal-gallery-control:before, .modaal-gallery-control:after {
     background: #fff;
   }
+
   .modaal-gallery-next {
     left: auto;
     right: 20px;
   }
+
   .modaal-gallery-prev {
     left: 20px;
     right: auto;
   }
 }
-
 @media screen and (max-width: 900px) {
   .modaal-instagram iframe {
     width: 500px !important;
   }
 }
-
 @media screen and (max-height: 1100px) {
   .modaal-instagram iframe {
     width: 700px !important;
   }
 }
-
 @media screen and (max-height: 1000px) {
   .modaal-inner-wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .modaal-instagram iframe {
     width: 600px !important;
   }
 }
-
 @media screen and (max-height: 900px) {
   .modaal-instagram iframe {
     width: 500px !important;
   }
+
   .modaal-video-container {
     max-width: 900px;
     max-height: 510px;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .modaal-instagram iframe {
     width: 280px !important;
   }
 }
-
 @media only screen and (max-height: 820px) {
   .modaal-gallery-label {
     display: none;
   }
 }
-
 .modaal-loading-spinner {
   background: none;
   position: absolute;
@@ -556,36 +490,28 @@
   top: 50%;
   left: 50%;
   margin: -100px 0 0 -100px;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
+  transform: scale(0.25);
 }
-
 @-webkit-keyframes modaal-loading-spinner {
   0% {
     opacity: 1;
-    -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
   100% {
-    opacity: .1;
-    -webkit-transform: scale(1);
+    opacity: 0.1;
     transform: scale(1);
   }
 }
-
 @keyframes modaal-loading-spinner {
   0% {
     opacity: 1;
-    -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
   100% {
-    opacity: .1;
-    -webkit-transform: scale(1);
+    opacity: 0.1;
     transform: scale(1);
   }
 }
-
 .modaal-loading-spinner > div {
   width: 24px;
   height: 24px;
@@ -616,27 +542,25 @@
 }
 
 .modaal-loading-spinner > div:nth-of-type(1) {
-  -webkit-transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(45deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(2) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
           animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .12s;
-  animation-delay: .12s;
+  -webkit-animation-delay: 0.12s;
+  animation-delay: 0.12s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(2) {
-  -webkit-transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(90deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(3) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
           animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .25s;
-  animation-delay: .25s;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(4) > div, .modaal-loading-spinner > div:nth-of-type(5) > div {
@@ -647,27 +571,25 @@
 }
 
 .modaal-loading-spinner > div:nth-of-type(3) {
-  -webkit-transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(135deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(4) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
           animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .37s;
-  animation-delay: .37s;
+  -webkit-animation-delay: 0.37s;
+  animation-delay: 0.37s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(4) {
-  -webkit-transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(180deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(5) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
           animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(6) > div, .modaal-loading-spinner > div:nth-of-type(7) > div {
@@ -678,43 +600,38 @@
 }
 
 .modaal-loading-spinner > div:nth-of-type(5) {
-  -webkit-transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(225deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(6) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
           animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .62s;
-  animation-delay: .62s;
+  -webkit-animation-delay: 0.62s;
+  animation-delay: 0.62s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(6) {
-  -webkit-transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(270deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(7) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
           animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .75s;
-  animation-delay: .75s;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(7) {
-  -webkit-transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(315deg) translate(70px, 0);
 }
 
 .modaal-loading-spinner > div:nth-of-type(8) > div {
   -webkit-animation: modaal-loading-spinner 1s linear infinite;
   animation: modaal-loading-spinner 1s linear infinite;
-  -webkit-animation-delay: .87s;
-  animation-delay: .87s;
+  -webkit-animation-delay: 0.87s;
+  animation-delay: 0.87s;
 }
 
 .modaal-loading-spinner > div:nth-of-type(8) {
-  -webkit-transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
   transform: translate(84px, 84px) rotate(360deg) translate(70px, 0);
-}
-/*# sourceMappingURL=modaal.css.map */
+}/*# sourceMappingURL=modaal.css.map */

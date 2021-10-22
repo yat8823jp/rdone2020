@@ -8,17 +8,18 @@
 		padding: 100px;
 	}
 	&__imgbox {
-		max-width: 600px;
-		margin: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		position: relative;
 		z-index: 1;
 		@include breakpoint( tablet ) {
 		}
 		@include breakpoint( pc ) {
-			max-width: 1000px;
 		}
 	}
-	&--webdesign {
+	&--portfolio-detail {
 		@extend .p-thumbnail;
 		background: #ededed;
 		position: relative;
@@ -42,6 +43,14 @@
 			}
 			@include breakpoint( pc ) {
 				width: 400px;
+			}
+		}
+		.p-thumbnail__imgbox {
+			.print {
+				width: 200px;
+				@include breakpoint( tablet ) {
+					width: 300px;
+				}
 			}
 		}
 	}

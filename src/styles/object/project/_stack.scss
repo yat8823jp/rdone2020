@@ -28,7 +28,7 @@
 				left: 44px;
 			}
 		}
-		.imgrap {
+		.c-imgwrap {
 			position: relative;
 			@include hovanime;
 			margin-bottom: 30px;
@@ -36,7 +36,6 @@
 				margin-bottom: 65px;
 			}
 			a {
-				display: block;
 				.mv {
 					height: auto;
 					display: block;
