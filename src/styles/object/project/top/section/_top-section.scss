@@ -1,11 +1,11 @@
 .p-top-section {
-	padding: 70px 20px 0;
+	padding: 70px 20px 50px;
 	@include breakpoint( tablet ) {
-		padding: 50px 20px 0x;
+		padding: 50px 20px 50px;
 	}
 	@include breakpoint( pc ) {
 		// width: 930px;
-		padding: 100px 0 0;
+		padding: 100px 0;
 	}
 	@include breakpoint( wide ) {
 	}
@@ -94,7 +94,12 @@
 	}//&__header
 	&--print {
 		@extend .p-top-section;
-		padding: 10px 50px 0;
+		padding: 10px 50px 50px;
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+			padding: 10px 50px 100px;
+		}
 		.headline {
 			font-size: 5.0rem;
 			margin-left: 0;
@@ -114,7 +119,7 @@
 			height: 190px;
 			margin-bottom: 50px;
 			@include breakpoint( tablet ) {
-				// margin-bottom: 80px;
+				margin-bottom: 80px;
 				// height: 60vh;
 			}
 			@include breakpoint( pc ) {

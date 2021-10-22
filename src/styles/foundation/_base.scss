@@ -15,20 +15,8 @@ body {
 	font-family: "游明朝", YuMincho;
 	overflow-x: hidden;
 	position: relative;
-	// height: 2000px;
-	// &::before {
-	// 	content: "";
-	// 	width: 120%;
-	// 	height: 200%;
-	// 	margin: 0;
-	// 	border-left: .5px solid #000;
-	// 	top: -100%;
-	// 	left: 10%;
-	// 	position: fixed;
-	// 	transform: rotate( -50deg );
-	// 	z-index: -1;
-	// 	display: block;
-	// }
+	display: flex;
+	flex-direction: column;
 }
 
 img {
