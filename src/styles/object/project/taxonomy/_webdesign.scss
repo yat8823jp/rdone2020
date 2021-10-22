@@ -20,6 +20,9 @@
 		@include breakpoint( contents ) {
 			padding: 50px 0;
 		}
+		p {
+			margin-bottom: 20px;
+		}
 	}
 	&__imgs {
 		padding: 35px;
