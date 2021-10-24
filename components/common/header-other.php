@@ -9,10 +9,11 @@
 					$title = get_the_title();
 					if( is_plugin_active( "smart-custom-fields/smart-custom-fields.php" ) ) {
 						$url = esc_url( SCF::get( "url" ) );
-						$release_date = date_create( ( SCF::get( "releasedate" ) ) );
-						$date =  date_format( $release_date, 'M.Y' );
+						if ( SCF::get( "releasedate" ) ) {
+							$release_date = date_create( SCF::get( "releasedate" ) );
+							$date =  date_format( $release_date, 'M, d, Y' );
+						}
 					}
-
 					$tags = get_the_terms( $post -> ID, 'type_tag');
 					if ( $tags ) :
 						$type_tags = 'Website[ ';
@@ -35,7 +36,7 @@
 						<p class="p-header--webdesign__tag"><?php echo esc_html( $type_tags ); ?></p>
 					<?php endif; ?>
 					<?php if ( $date ) : ?>
-						<p class="p-header--webdesign__date"><?php echo esc_html( $date ); ?></p>
+						<p class="p-header--webdesign__date">Release: <?php echo esc_html( $date ); ?></p>
 					<?php endif; ?>
 					<?php echo imgdescription(); ?>
 				<?php endwhile; ?>
